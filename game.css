@@ -1,0 +1,60 @@
+#game-container {
+  /* width: 100px;
+  height: 200px; */
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wall-tile {
+  background-color: gray !important;
+  border: 0 !important;
+  z-index: 1 !important;
+}
+.block-tile {
+  background-color: brown !important;
+  z-index: 10 !important;
+  transition: left .15s, top .15s;
+  transition-timing-function: ease-in-out;
+}
+.block-tile-goal {
+  background-color: red !important;
+  transition: left .15s, top .15s;
+  transition-timing-function: ease-in-out;
+}
+.goal-tile {
+  background-color: pink !important;
+}
+.player-tile {
+  background-color: green !important;
+  z-index: 10 !important;
+  transition: left .15s, top .15s;
+  transition-timing-function: ease-in-out;
+}
+
+.tile {
+  z-index: 2;
+  width: 25px;
+  height: 25px;
+  background-color: lightgray;
+  position: absolute;
+  border: 1px solid #666;
+}
+
+#score {
+  z-index: 1000;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+#win-screen {
+  z-index: 1000;
+  position: absolute;
+  top: 170px;
+  left: 170px;
+  background-color: white;
+  padding: 40px 50px;
+  visibility: hidden;
+}
